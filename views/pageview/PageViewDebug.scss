@@ -1,0 +1,33 @@
+.pageview-debug {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.pv-debug-panel {
+	display: flex;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0.3;
+	cursor: pointer;
+	line-height: 26px;
+	text-align: center;
+	opacity: 0;
+}
+.pv-debug-panel:hover {
+	opacity: 0.3;
+}
+
+
+.pv-debug-panel div {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.pageview-debug .material-icons {
+	width: 26px;
+	height: 26px;
+	font-size: 20px;
+}
+

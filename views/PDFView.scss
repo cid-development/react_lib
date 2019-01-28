@@ -1,0 +1,42 @@
+.pdf-view {
+	// border: 1px solid red;
+	display: flex;
+}
+
+.pdf-doc {
+	display: flex;
+	flex-wrap: wrap;
+	// height: 500px;
+	// width: 400px;
+	// border: 1px solid blue;
+	// overflow: hidden;
+	overflow-y: auto;
+}
+
+.pdf-page {
+	// height: 200px;
+	// border: 1px solid red;
+	// padding: 4px;
+	margin: 4px;
+	// transition: 0.2s;
+	border: 1px solid #666;
+}
+// .pdf-page:hover {
+	// transform: scale(1.2);
+	// z-index: 1;
+// }
+
+.pdf-index {
+	display: flex;
+	flex-wrap: wrap;
+	overflow-y: auto;
+}
+
+.pdf-thumb {
+	margin: 4px;
+	border: 1px solid #666;
+}
+
+
+.react-pdf__Page__canvas {
+}

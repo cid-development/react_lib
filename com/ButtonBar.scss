@@ -1,0 +1,22 @@
+.buttonbar {
+	display: flex;
+	flex-shrink: 0;
+}
+
+.buttonbar-item {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 16px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color:#444;
+	color: #ccc;
+}
+.buttonbar-item.selected {
+	background-color:#666;
+	pointer-events: none;
+}
+
+.buttonbar-item:hover {
+	background-color:#555;
+}

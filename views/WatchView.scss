@@ -1,0 +1,23 @@
+.watch-view {
+	background-color: #333;
+	margin: 20px;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	padding: 6px 10px;
+}
+
+.watch-item {
+	width: 500px;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+.watch-item-label {
+	width: 200px;
+	display: inline-block;
+}
+
+.watch-item-value {
+	width: 300px;
+	display: inline-block;
+}

@@ -1,0 +1,41 @@
+.ui-select {
+	position: relative;
+	color: black;
+	line-height: 30px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.ui-select-button {
+	background-color: #ccc;
+	// padding: 0 10px;
+	text-indent: 10px;
+}
+
+.ui-select-list {
+	padding-top: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: none;
+	z-index: 3;
+	filter: drop-shadow(0 0 0.5vw rgba(0,0,0,0.3));
+	max-height: 500px;
+	overflow-y: auto;
+}
+.ui-select-list.open {
+	display: block;
+}
+
+.ui-select-item {
+	text-indent: 10px;
+	background-color: white;
+}
+.ui-select-item:hover {
+	background-color: #eee;
+}
+
+.ui-select-item.selected {
+	background-color: #eee;
+	pointer-events: none;
+}

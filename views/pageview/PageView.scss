@@ -1,0 +1,74 @@
+.pageview {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.pageview-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	display: none;
+	// visibility: hidden;
+	z-index: 0;
+}
+
+.page.selected {
+	display: block;
+	// visibility: visible;
+	z-index: 1;
+}
+
+.page.animate {
+	visibility: hidden;
+	animation: slideOut 0.5s;
+	z-index: 0;
+
+	// animation: slideOutBack 0.5s;
+	// z-index: 1;
+}
+.page.animate.selected {
+	z-index: 1;
+}
+.page.animate.visible {
+	visibility: visible;
+	animation: slideIn 0.5s;
+	// animation: slideInBack 0.5s;
+}
+ 
+
+@keyframes fadeIn {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+
+
+@keyframes slideIn {
+	0% { transform: translateX(100%) }
+	100% { transform: translateX(0) }
+}
+@keyframes slideOut {
+	0% { visibility: visible; filter: brightness(1); transform: translateX(0) }
+	100% { visibility: hidden; filter: brightness(0.2); transform: translateX(-200px) }
+}
+
+@keyframes slideInBack {
+	0% { visibility: visible; filter: brightness(0.2); transform: translateX(-200px) }
+	100% { visibility: hidden; filter: brightness(1); transform: translateX(0) }
+}
+@keyframes slideOutBack {
+	0% { transform: translateX(0); visibility: visible}
+	100% { transform: translateX(100%); visibility: hidden}
+}

@@ -1,0 +1,14 @@
+.drag-box {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.drag-box.drag {
+	background-color: blue;
+}

@@ -1,0 +1,61 @@
+.ui-control {
+	display: flex;
+	align-items: center;
+}
+
+.ui-label {
+	// display: inline-block;
+	padding: 0 10px;
+}
+
+
+.ui-switch {
+	width: 32px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	background-color: #333;
+	cursor: pointer;
+	border-radius: 16px;
+	border: 2px solid #333;
+	pointer-events: auto;
+	box-sizing: content-box;
+}
+
+.ui-switch-button {
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	transition: .2s;
+	border-radius: 50%;
+}
+
+.ui-switch.checked {
+	background-color: green;
+	border-color: green;
+}
+
+.ui-switch.checked .ui-switch-button{
+	transform: translateX(16px);
+}
+
+.ui-switch span {
+	// border: 1px solid red;
+	// display: inline-block;
+}
+
+
+.ui-check {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.ui-check i {
+	width: 20px;
+	line-height: 20px;
+	font-size: 18px;
+	height: 20px;
+	text-align: center;
+	// margin-right: 10px;
+	background-color: cadetblue;
+}

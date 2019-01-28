@@ -1,0 +1,27 @@
+.treelist {
+
+}
+
+.treelist-item {
+	background-color:#444;
+}
+.treelist-item.selected {
+	background-color:#666;
+}
+
+.treelist-button {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.treelist-button:hover {
+	background-color:#555;
+}
+
+.treelist-node {
+	display: none;
+}
+.treelist-node.open {
+	display: block;
+}
